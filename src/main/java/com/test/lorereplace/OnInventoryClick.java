@@ -4,7 +4,6 @@ import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.Action;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -54,7 +53,7 @@ public class OnInventoryClick implements Listener {
                             secendLore.set(i, f);
                             itemMeta.setLore(secendLore);
                             secendItem.setItemMeta(itemMeta);
-                            //让玩家发送lang.Yml中的消息
+                            //对玩家发送lang.Yml中的消息
                             player.sendMessage(lang);
                             break;
                         }

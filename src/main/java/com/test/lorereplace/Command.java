@@ -1,13 +1,13 @@
 package com.test.lorereplace;
 
-import org.bukkit.Bukkit;
+
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import static com.test.lorereplace.LoadLore.LoreMap;
-import static com.test.lorereplace.LoadLore.loadConfig;
-import static com.test.lorereplace.LoreReplace.instance;
+
+import static com.test.lorereplace.LoadLore.*;
+
 
 public class Command implements CommandExecutor {
     @Override
@@ -19,7 +19,7 @@ public class Command implements CommandExecutor {
             if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
                 LoreMap.clear();
                 loadConfig();
-                player.sendMessage("[LoreReplace]插件重载成功");
+                player.sendMessage("§b[LoreReplace]§6插件重载成功");
                 return true;
             }
         }

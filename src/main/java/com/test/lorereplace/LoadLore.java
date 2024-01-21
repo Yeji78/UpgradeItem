@@ -1,14 +1,12 @@
 package com.test.lorereplace;
 
 
-import org.bukkit.Bukkit;
-import org.bukkit.Particle;
-import org.bukkit.configuration.file.FileConfiguration;
+
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.*;
 import java.util.HashMap;
-import java.util.List;
+
 import java.util.Set;
 
 
@@ -20,7 +18,7 @@ public class LoadLore {
     public static void loadConfig() {
         //获取这两个文件夹
         final YamlConfiguration file = YamlConfiguration.loadConfiguration(new File(LoreReplace.instance.getDataFolder(), "\\config.yml"));
-        final YamlConfiguration langfile = YamlConfiguration.loadConfiguration(new File(LoreReplace.instance.getDataFolder(), "\\lang.yml"));
+        final YamlConfiguration langfile = YamlConfiguration.loadConfiguration(new File(LoreReplace.instance.getDataFolder(),"\\lang.yml"));
         //获取config中所有的key
         allKeys = file.getKeys(false);
         //获取lang中的tips词条
