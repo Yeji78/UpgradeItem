@@ -1,9 +1,9 @@
-name: LoreReplace
+name: UpGradeItem
 version: 1.0.0
-main: com.test.lorereplace.LoreReplace
+main: com.test.UpgradeItem.UpgradeItem
 author: yeji778
 commands:
-  LoreReplace:
+  UpgradeItem:
     aliases:
-      - lr
+      - ui
     permission-message: 你不能执行他

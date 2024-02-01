@@ -1,4 +1,4 @@
-package com.test.lorereplace;
+package com.test.UpgradeItem;
 
 
 import org.bukkit.command.CommandExecutor;
@@ -6,7 +6,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 
-import static com.test.lorereplace.LoadLore.*;
+import static com.test.UpgradeItem.LoadLore.ItemMap;
+import static com.test.UpgradeItem.LoadLore.loadConfig;
 
 
 public class Command implements CommandExecutor {
@@ -17,9 +18,9 @@ public class Command implements CommandExecutor {
             Player player = (Player) sender;
             //指令为lorereplace reload
             if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
-                LoreMap.clear();
+                ItemMap.clear();
                 loadConfig();
-                player.sendMessage("§b[LoreReplace]§6插件重载成功");
+                player.sendMessage("§b[UpgradeItem]§6插件重载成功");
                 return true;
             }
         }

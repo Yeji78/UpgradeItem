@@ -1,7 +1,12 @@
 一:
-  FirstLore: "A"   #拿起的物品lore，即为替换后的lore
-  ReplaceLore: "B" #需要替换的语句
-二:
-  FirstLore: "牛逼"
-  ReplaceLore: "mua"
+  Success: 100 #100即为100%,不设置默认为100
+  FirstItemLore: "A"   #拿起的物品lore，即升级的lore
+  ItemName: "傻逼之剑" #需要判断的物品名字
+  GradeItemLore:
+    - "强化词条" ##需要替换的语句第一段
+    - "词条结束" ##需要替换的语句第二段
+  ReplaceLore:
+    - "物理伤害:20"
+    - "真实伤害:70"
+
 
